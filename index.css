@@ -1,0 +1,425 @@
+﻿@media screen and (min-width: 641px){
+
+/*mobile none*/
+#mo-wrap {
+  display: none;
+}
+
+*{
+    font-size: 9pt;
+    font-family: メイリオ;
+}
+HTML, BODY 
+{
+    height: 100%;
+    background-color: Green;
+    overflow: hidden;
+}
+SPAN, DIV { color: White; }
+A { color: Yellow; }
+.wrap
+{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    margin: 0 auto;
+}
+.wrap > DIV
+{
+    height: 33%;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+.pain > DIV 
+{
+    height: 100%;
+}
+#above > DIV, #below > DIV
+{
+    vertical-align: top;
+    text-align: center;
+    top: 10%;
+    position: relative;
+}
+#middle-center
+{
+    display: inline-block;
+    float: none;
+    text-align: center;
+    position: relative;
+}
+DIV.apps
+{
+    width: 11%;
+    display: inline-block;
+    margin: 1%;
+}
+IMG.icon
+{
+    background-color: White;
+    border: 2px solid Silver;
+    border-radius: 10px;
+    height: 30%;
+    width: auto;
+    display: inline-block;
+}
+IMG.yuriko
+{
+    border: 5px solid Aqua;
+    border-radius: 20px;
+    width: auto;
+    height: 80%;
+}
+#dontcry {right: 100%;}
+#yuriko {left:100%;}
+SPAN.dontcryyuriko
+{
+    font-size: 22pt;
+    text-shadow: 3px 3px 2px black;
+    position: absolute;
+    top: 40%;
+    padding: 5%;
+    width: 200%;
+}
+SPAN.ichikawayuriko 
+{
+    font-size: 16pt;
+}
+#headerleft, #headerright, #fotterleft, #fotterright
+{
+    height: auto;
+    position: absolute;
+    text-align: initial;
+}
+.header{ top: 10px; }
+.footer{ bottom: 10px; }
+#fotterright, #headerright
+{
+    right: 10px;
+    text-align: right;
+    z-index: 10;
+}
+#fotterleft
+{
+    left: 10px;
+    width: 50%;
+    color: yellow;
+    font-size: 5pt;
+}
+.fb_iframe_widget > span 
+{
+    vertical-align: baseline !important;
+}
+
+
+}/*min-width: 640px*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************/
+@media screen and (max-width: 640px){
+
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+/*pc none*/
+.wrap {
+  display: none;
+}
+
+  
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,body{
+  min-width: 320px;
+  max-height:100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background-color: #4CDC9C;
+}
+#mo-middle{
+  min-width: 320px;
+}
+/*header menu*/
+/*ヘッダーまわりはサイトに合わせて調整してください*/
+
+#mo-header{
+
+  display: block;
+  height: 44px;
+  max-width: 100%;
+  background: #4CDC9C;
+  position: relative;
+  padding-top: 2px;
+
+}
+
+#mo-header div{
+  display: inline;
+}
+
+#mo-nav-drawer {
+  margin:0;
+  padding:0 10px;
+}
+
+/*チェックボックス等は非表示に*/
+.mo-nav-unshown {
+  display:none;
+}
+
+/*アイコンのスペース*/
+#mo-nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/*ハンバーガーアイコンをCSSだけで表現*/
+#mo-nav-open span, #mo-nav-open span:before, #mo-nav-open span:after {
+  position: absolute;
+  height: 3px;/*線の太さ*/
+  width: 25px;/*長さ*/
+  border-radius: 3px;
+  background: #555;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+#mo-nav-open span:before {
+  top: 8px;
+}
+#mo-nav-open span:after {
+  top: 16px;
+}
+
+/*閉じる用の薄黒カバー*/
+#mo-nav-close {
+  display: none;/*はじめは隠しておく*/
+  position: fixed;
+  z-index: 99;
+  top: 0;/*全体に広がるように*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+/*中身*/
+#mo-nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  z-index: 9999;/*最前面に*/
+  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  max-width: 330px;/*最大幅（調整してください）*/
+  height: 522px;
+  background: #4CDC9C;/*背景色*/
+  transition: .3s ease-in-out;/*滑らかに表示*/
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);/*左に隠しておく*/
+}
+
+/*チェックが入ったらもろもろ表示*/
+#mo-nav-input:checked ~ #mo-nav-close {
+  display: block;/*カバーを表示*/
+  opacity: .5;
+}
+
+#mo-nav-input:checked ~ #mo-nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*中身を表示（右へスライド）*/
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+
+#mo-nav-content-list{
+  list-style-type: none;
+  height: auto;
+  
+}
+
+
+#mo-nav-content-list li{
+  background-color: #4CDC9C;
+  margin:0;
+  height: 44px;
+  border-bottom:1px solid #4CDC77;
+  }
+
+#mo-nav-content-list li a{
+  display: block;
+  color: black;
+  font-size: 1em;
+  text-decoration: none; 
+  width: 100%;
+  height: 44px;
+}
+
+#mo-nav-content-list li img{
+  height: 43px;
+  margin-right: 10px;
+  vertical-align: middle;
+
+}
+
+.mo-title-img{
+  height: 40px;
+  border-radius: 25%;
+  margin: 0 5%;
+  vertical-align: middle;
+
+
+}
+.mo-title-link{
+  color: white;
+  margin: 0;
+  text-decoration: none;
+
+}
+#mo-title-div{
+  text-align: center;
+  width: 100%;
+}
+
+
+/*middle*/
+#mo-middle{ 
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap:wrap;/*回り込み有効化*/
+  background: #fff;
+  text-align: center; 
+  height: 100%;
+ -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+ align-items: center; /* 縦方向中央揃え */
+ -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+ justify-content: center; /* 横方向中央揃え */
+
+}
+.mo-middle{
+  width: calc(100% / 3);/*3等分*/
+  align-items: center;
+  margin: 2em 0;
+}
+
+#mo-center-img{
+  vertical-align: middle;
+  max-width: 75%;
+  border-radius: 50%;
+}
+
+.mo-center-img-link{
+  max-width: 100%;
+  margin:auto;
+}
+
+/*modified*/
+#mo-modified{
+  display: flex;
+  flex-wrap:wrap;/*回り込み有効化*/
+  background: #4CDC9C;
+  text-align: left; 
+  height: 100%;
+  padding: .5em;
+  color: #fff
+
+}
+
+
+
+#mo-container p{
+  display: none;
+}
+#mo-container{
+  width: 100%;
+
+}
+
+.flexcont{
+  flex-wrap: nowrap;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.mo-apps{
+  width: calc(100% / 3);/*3等分*/
+}
+#mo-container img{
+  width: 100%; 
+  vertical-align: middle;
+}
+
+
+
+/*footer*/
+#mo-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+  
+.mo-footer{
+    margin: 1em .5em;
+    justify-content: space-around;
+}
+
+
+
+#mo-fottermiddle{
+    color: yellow;
+    font-size: .5em;
+}
+
+
+#mo-fotterright{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+
+
+
+
+.fb_iframe_widget > span 
+{
+    vertical-align: baseline !important;
+}
+}
+
+/*mo-wrap*/
+

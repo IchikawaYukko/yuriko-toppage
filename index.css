@@ -1,13 +1,17 @@
 ﻿@media screen and (min-width: 641px){
 
+/* YURIKO: コメント by ゆりこ     */
+
+/* YURIKO → 適切に字下げ(インデント)する  */
+/* YURIKO できればスペースじゃなくてタブでインデントして欲しい  */
 /*mobile none*/
 #mo-wrap {
-  display: none;
+  display: none;    /* YURIKO: インデントサイズ: スペース2 */
 }
 
 *{
-    font-size: 9pt;
-    font-family: メイリオ;
+    font-size: 9pt;   /* YURIKO:　インデントサイズ　スペース4　*/
+    font-family: メイリオ;  /* YURIKO: 1段階当たりのインデントサイズは統一すること */
 }
 HTML, BODY 
 {
@@ -111,7 +115,7 @@ SPAN.ichikawayuriko
 {
     vertical-align: baseline !important;
 }
-
+/* YURIKO: ブロック間を改行で区切る時は、1行空ければ十分　*/
 
 }/*min-width: 640px*/
 
@@ -122,6 +126,7 @@ SPAN.ichikawayuriko
 
 
 
+/* YURIKO: ブロック間を改行で区切る時は、1行空ければ十分　*/
 
 
 
@@ -131,8 +136,7 @@ SPAN.ichikawayuriko
 
 
 
-
-/****************************************/
+/****************************************/　　/* YURIKO: ←消す いらない  */
 @media screen and (max-width: 640px){
 
 /* CSSのリセット（消さないでください） */
@@ -169,7 +173,7 @@ html,body{
   min-width: 320px;
 }
 /*header menu*/
-/*ヘッダーまわりはサイトに合わせて調整してください*/
+/*ヘッダーまわりはサイトに合わせて調整してください*/  /* YURIKO: ←調整したら、このコメントは消す　*/
 
 #mo-header{
 
@@ -204,7 +208,7 @@ html,body{
   vertical-align: middle;
 }
 
-/*ハンバーガーアイコンをCSSだけで表現*/
+/*ハンバーガーアイコンをCSSだけで表現*/　/* YURIKO: ← コレ初めて見たけど、すごいな　*/
 #mo-nav-open span, #mo-nav-open span:before, #mo-nav-open span:after {
   position: absolute;
   height: 3px;/*線の太さ*/
@@ -244,7 +248,7 @@ html,body{
   left: 0;
   z-index: 9999;/*最前面に*/
   width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
-  max-width: 330px;/*最大幅（調整してください）*/
+  max-width: 330px;/*最大幅（調整してください）*/　/* YURIKO: 調整が終わったら(調整してください)の文言は消す(ださい)　*/
   height: 522px;
   background: #4CDC9C;/*背景色*/
   transition: .3s ease-in-out;/*滑らかに表示*/
@@ -270,7 +274,7 @@ html,body{
   
 }
 
-
+/* YURIKO: ブロック間を改行で区切る時は、1行空ければ十分　*/
 #mo-nav-content-list li{
   background-color: #4CDC9C;
   margin:0;
@@ -299,7 +303,7 @@ html,body{
   border-radius: 25%;
   margin: 0 5%;
   vertical-align: middle;
-
+/* YURIKO: ブロック間を改行で区切る時は、1行空ければ十分　*/
 
 }
 .mo-title-link{
@@ -313,6 +317,7 @@ html,body{
   width: 100%;
 }
 
+/* YURIKO: ブロック間を改行で区切る時は、1行空ければ十分　*/
 
 /*middle*/
 #mo-middle{ 
@@ -326,7 +331,7 @@ html,body{
  align-items: center; /* 縦方向中央揃え */
  -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
  justify-content: center; /* 横方向中央揃え */
-
+    /* YURIKO: インデントサイズは統一すること　上の行なんか、スペース1コしかない　*/
 }
 .mo-middle{
   width: calc(100% / 3);/*3等分*/
@@ -354,9 +359,9 @@ html,body{
   height: 100%;
   padding: .5em;
   color: #fff
-
+/* YURIKO: ブロック間を改行で区切る時は、1行空ければ十分　*/
 }
-
+/* YURIKO: ブロック間を改行で区切る時は、1行空ければ十分　*/
 
 
 #mo-container p{
@@ -364,7 +369,7 @@ html,body{
 }
 #mo-container{
   width: 100%;
-
+/* YURIKO: ブロック間を改行で区切る時は、1行空ければ十分　*/
 }
 
 .flexcont{
@@ -381,7 +386,7 @@ html,body{
   vertical-align: middle;
 }
 
-
+/* YURIKO: ブロック間を改行で区切る時は、1行空ければ十分　*/
 
 /*footer*/
 #mo-footer{
@@ -396,14 +401,14 @@ html,body{
     justify-content: space-around;
 }
 
-
+/* YURIKO: ブロック間を改行で区切る時は、1行空ければ十分　*/
 
 #mo-fottermiddle{
     color: yellow;
     font-size: .5em;
 }
 
-
+/* YURIKO: ブロック間を改行で区切る時は、1行空ければ十分　*/
 #mo-fotterright{
   display: flex;
   flex-wrap: wrap;
@@ -411,7 +416,7 @@ html,body{
 }
 
 
-
+/* YURIKO: ブロック間を改行で区切る時は、1行空ければ十分　*/
 
 
 
@@ -423,3 +428,4 @@ html,body{
 
 /*mo-wrap*/
 
+/* YURIKO:  最終行の空行は不要　*/

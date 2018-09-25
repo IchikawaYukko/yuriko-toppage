@@ -1,8 +1,6 @@
 @media screen and (min-width: 641px){
 
-  #mo-wrap{
-    display: none;
-  }
+  #mo-wrap{display: none;}
 
   *{
     font-size  : 9pt;
@@ -15,13 +13,9 @@
     overflow        : hidden;
   }
 
-  SPAN, DIV{
-    color: White;
-  }
+  SPAN, DIV{color: White;}
 
-  A{
-    color: Yellow;
-  }
+  A{color: Yellow;}
 
   .wrap{
     width     : 100%;
@@ -77,13 +71,9 @@
     height       : 80%;
   }
 
-  #dontcry{
-    right: 100%;
-  }
+  #dontcry{right: 100%;}
 
-  #yuriko{
-    left:100%;
-  }
+  #yuriko{left:100%;}
 
   SPAN.dontcryyuriko{
     font-size  : 22pt;
@@ -94,9 +84,7 @@
     width      : 200%;
   }
 
-  SPAN.ichikawayuriko{
-    font-size: 16pt;
-  }
+  SPAN.ichikawayuriko{font-size: 16pt;}
 
   #headerleft, #headerright, #fotterleft, #fotterright{
     height    : auto;
@@ -104,13 +92,9 @@
     text-align: initial;
   }
 
-  .header{
-    top: 10px;
-  }
+  .header{top: 10px;}
 
-  .footer{
-    bottom: 10px;
-  }
+  .footer{bottom: 10px;}
 
   #fotterright, #headerright{
     right     : 10px;
@@ -125,22 +109,17 @@
     font-size: 5pt;
   }
 
-  .fb_iframe_widget > span{
-    vertical-align: baseline !important;
-  }
+  .fb_iframe_widget > span{vertical-align: baseline !important;}
+}
 
-}/*min-width: 640px*/
-
-  @media screen and (max-width: 640px){
-  /* CSSのリセット（消さないでください） */
+@media screen and (max-width: 640px){
+  /* CSSのリセット */
   html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, form, input, div{
     margin : 0;
     padding: 0;
   }
   /*pc none*/
-  .wrap{
-    display: none;
-  }
+  .wrap{display: none;}
 
   *{
     -webkit-box-sizing: border-box;
@@ -158,9 +137,7 @@
     background-color: #4CDC9C;
   }
 
-  #mo-middle{
-    min-width: 320px;
-  }
+  #mo-middle{min-width: 320px;}
   /*header menu*/
   #mo-header{
     display    : block;
@@ -171,18 +148,14 @@
     padding-top: 2px;
   }
 
-  #mo-header div{
-    display: inline;
-  }
+  #mo-header div{display: inline;}
 
   #mo-nav-drawer {
     margin :0;
     padding:0 10px;
   }
-  /*チェックボックス等は非表示に*/
-  .mo-nav-unshown {
-    display:none;
-  }
+  /*チェックボックス等非表示に*/
+  .mo-nav-unshown {display:none;}
   /*アイコンのスペース*/
   #mo-nav-open {
     display       : inline-block;
@@ -190,7 +163,7 @@
     height        : 22px;
     vertical-align: middle;
   }
-  /*ハンバーガーアイコンをCSSだけで表現*/　/* YURIKO: ← コレ初めて見たけど、すごいな　*/
+  /*ハンバーガーアイコンをCSSだけで表現*/
   #mo-nav-open span, #mo-nav-open span:before, #mo-nav-open span:after {
     position     : absolute;
     height       : 3px;/*線の太さ*/
@@ -202,13 +175,9 @@
     cursor       : pointer;
   }
 
-  #mo-nav-open span:before {
-    top: 8px;
-  }
+  #mo-nav-open span:before {top: 8px;}
 
-  #mo-nav-open span:after {
-    top: 16px;
-  }
+  #mo-nav-open span:after {top: 16px;}
   /*閉じる用の薄黒カバー*/
   #mo-nav-close {
     display   : none;/*はじめは隠しておく*/
@@ -307,7 +276,7 @@
     justify-content        : center; /* 横方向中央揃え */
   }
 
-    .mo-middle{
+  .mo-middle{
     width                  : calc(100% / 3);/*3等分*/
     align-items            : center;
     margin                 : 2em 0;
@@ -334,13 +303,9 @@
     color     : #fff
   }
 
-  #mo-container p{
-    display: none;
-  }
+  #mo-container p{display: none;}
 
-  #mo-container{
-    width: 100%;
-  }
+  #mo-container{width: 100%;}
 
   .flexcont{
     flex-wrap      : nowrap;
@@ -348,10 +313,8 @@
     -ms-flex-pack  : distribute;
     justify-content: space-around;
   }
-
-  .mo-apps{
-    width: calc(100% / 3);/*3等分*/
-  }
+  /*3等分*/
+  .mo-apps{width: calc(100% / 3);}
 
   #mo-container img{
     width         : 100%; 
@@ -380,8 +343,5 @@
     justify-content: flex-start;
   }
 
-  .fb_iframe_widget > span{
-    vertical-align: baseline !important;
-  }
-
+  .fb_iframe_widget > span{vertical-align: baseline !important;}
 }

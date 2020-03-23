@@ -323,8 +323,8 @@
   /*footer*/
   #mo-footer{
     display        : flex;
-    flex-wrap      : wrap;
     justify-content: space-around;
+    flex-direction : column;
   }
 
   .mo-footer{
@@ -334,14 +334,14 @@
 
   #mo-fottermiddle{
     color    : yellow;
-    font-size: .5em;
+    font-size: 1em;
   }
 
   #mo-fotterright{
-    display        : flex;
-    flex-wrap      : wrap;
-    justify-content: flex-start;
+    display:      : inline-flex;
+    flex-direction: column;
+    width         : 88px;
   }
-
+  
   .fb_iframe_widget > span{vertical-align: baseline !important;}
 }

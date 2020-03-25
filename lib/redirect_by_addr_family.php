@@ -2,14 +2,14 @@
 $loc_ipv4 = filter_input(INPUT_GET, 'ipv4', FILTER_SANITIZE_URL);
 $loc_ipv6 = filter_input(INPUT_GET, 'ipv6', FILTER_SANITIZE_URL);
 
-function is_same_origin($ipv4, $ipv6) {
-    if (strpos($ipv4, ':') || strpos($ipv6, ':')){
+function is_same_origin($location) {
+    if (strpos($location, ':')){
         return true;
     }
     return false;
 }
 
-if (is_same_origin($loc_ipv4, $loc_ipv6)) {
+if (is_same_origin($loc_ipv4) || is_same_origin($loc_ipv6)) {
     header($_SERVER["SERVER_PROTOCOL"].'404');
     exit;
 }

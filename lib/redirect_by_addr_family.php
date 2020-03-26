@@ -4,17 +4,17 @@ $loc_ipv6 = filter_input(INPUT_GET, 'ipv6', FILTER_SANITIZE_URL);
 
 function is_same_origin($location) {
     if (strpos($location, ':')){
-        return true;
+        return false;
     }
-    return false;
+    return true;
 }
 
-if (is_same_origin($loc_ipv4) || is_same_origin($loc_ipv6)) {
-    header($_SERVER["SERVER_PROTOCOL"].'404');
+if (!strlen($loc_ipv4) || !strlen($loc_ipv6)) {
+    header($_SERVER["SERVER_PROTOCOL"].' 400', TRUE, 400);
     exit;
 }
-if (!strlen($loc_ipv4) || !strlen($loc_ipv6)) {
-    header($_SERVER["SERVER_PROTOCOL"].'400');
+if (is_same_origin($loc_ipv4) || is_same_origin($loc_ipv6)) {
+    header($_SERVER["SERVER_PROTOCOL"].' 404', TRUE, 404);
     exit;
 }
 if ($_SERVER['REQUEST_METHOD'] == 'GET' || $_SERVER['REQUEST_METHOD'] == 'HEAD') {

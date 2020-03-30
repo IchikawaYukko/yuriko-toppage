@@ -13,7 +13,7 @@ if (!strlen($loc_ipv4) || !strlen($loc_ipv6)) {
     header($_SERVER["SERVER_PROTOCOL"].' 400', TRUE, 400);
     exit;
 }
-if (is_same_origin($loc_ipv4) || is_same_origin($loc_ipv6)) {
+if (!is_same_origin($loc_ipv4) || !is_same_origin($loc_ipv6)) {
     header($_SERVER["SERVER_PROTOCOL"].' 404', TRUE, 404);
     exit;
 }

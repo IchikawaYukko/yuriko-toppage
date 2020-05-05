@@ -338,10 +338,14 @@
   }
 
   #mo-fotterright{
-    display:      : inline-flex;
+    display       : inline-flex;
     flex-direction: column;
     width         : 88px;
   }
   
   .fb_iframe_widget > span{vertical-align: baseline !important;}
+}
+
+.hatena-bookmark {
+  border: none;
 }

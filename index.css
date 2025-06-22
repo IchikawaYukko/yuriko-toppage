@@ -107,6 +107,7 @@
     width    : 50%;
     color    : yellow;
     font-size: 5pt;
+    display  : inline-flex;
   }
 
   .fb_iframe_widget > span{vertical-align: baseline !important;}
